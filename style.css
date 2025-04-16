@@ -1,22 +1,25 @@
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background: #222; /* Тёмный фон вокруг видео */
 }
 
-.video-wrapper {
-    max-width: 800px; /* Ограничиваем ширину */
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.video-container {
+    width: 478px; /* Фиксированная ширина под ваше видео */
+    height: 710px; /* Фиксированная высота */
+    background: #000; /* Чёрный фон внутри контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 video {
-    width: 100%;
-    display: block;
-    background: #000;
+    max-width: 100%; /* Не превышать оригинальный размер */
+    max-height: 100%;
+    object-fit: contain; /* Сохранять пропорции */
 }
