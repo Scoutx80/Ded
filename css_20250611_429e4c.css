@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.video-wrapper {
+    max-width: 800px; /* Ограничиваем ширину */
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+video {
+    width: 100%;
+    display: block;
+    background: #000;
+}
